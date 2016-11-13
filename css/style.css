@@ -6,7 +6,7 @@
 * {
 	margin: 0;
 	padding: 0;
-        font-family: 'league-gothic.regular', Arial, sans-serif;;
+        font-family: 'league-gothic.regular', Arial, sans-serif;
 }
 
 .clearfix:after {
@@ -18,9 +18,10 @@
 }
 
 /*HEADER*/
+
 header {
 	background: url(../img/header.png) no-repeat;
-	background-position: center center;
+       	background-position: center center;
 	background-size: cover;
 	height: 869px;
 }
@@ -40,7 +41,7 @@ header {
 	padding-top: 74px;
 }
 .head_nav_menu {
-	float: right;
+	display: inline-block;
 	text-align: right;
 	list-style: none;
 	width: 806px;
@@ -92,6 +93,9 @@ header {
 	position: absolute;
 	width: 246px;
 	border: 1px solid black;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
 	border-radius: 10px;
 	background: rgba(54,41,46,0.75);
 	z-index: 2; 
@@ -123,9 +127,15 @@ header {
 }
 
 .head_nav_submenu .head_nav_submenu_item:first-child .submenu_link {
-	border-radius: 10px 10px 0 0;
-	border-top-left-radius: 10px; 
-	line-height: 45px;
+        
+         -moz-border-radius: 10px 10px 0 0;
+         -webkit-border-radius: 10px 10px 0 0;
+	 border-radius: 10px 10px 0 0;
+
+         -moz-border-top-left-radius: 10px;
+         -webkit-border-top-left-radius: 10px;
+	 border-top-left-radius: 10px; 
+         line-height: 45px;
 }
 
 .head_nav_submenu .head_nav_submenu_item:last-child{
@@ -133,8 +143,12 @@ header {
 }
 
 .head_nav_submenu .head_nav_submenu_item:last-child .submenu_link {
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+         -moz-border-bottom-right-radius: 10px;
+         -webkit-border-bottom-right-radius: 10px;
+	  border-bottom-right-radius: 10px;
+   
+	-moz-border-bottom-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
 }
 
 .head_nav_submenu .head_nav_submenu_item .submenu_link:hover {
@@ -151,7 +165,7 @@ header {
 }
 .nav_menu_switchover {
 	float: right;
-	list-style: none;
+        list-style: none;
 	margin-right: 167px;
 }
 .nav_menu_switchover li {
@@ -187,6 +201,7 @@ header {
 	background-color: rgba(40, 40, 40, 0.2);
 	z-index: 1;
 }
+
 .left_icon {
 	float: left;
 	line-height: 400px;
@@ -198,6 +213,7 @@ header {
 	line-height: 400px;
 	padding-top: 13px;
 }
+
 .left_icon a,
 .right_icon a {
 	display: block;
@@ -211,13 +227,16 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .mobile_text {
 	float: left;
 	margin-top: 85px;
 }
+
 .mobile_text span {
 	width: 504px;
 }
+
 .mobile_text_item1 {
 	font-size: 58px;
 	color: white;
@@ -264,8 +283,9 @@ main {
 	background-image: -webkit-linear-gradient(top, #745083 0%, #33253a 100%);
 	/* W3C Markup */ 
 	background-image: linear-gradient(to bottom, #745083 0%, #33253a 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#33253a');/*For IE7-8-9*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#745083', endColorstr='#322539', GradientType=0); /* IE6-9 */
 }
+
 .about_box,
 .blog_box,
 .copyright_box {
@@ -287,7 +307,10 @@ main {
 	background: url(../img/spritesheet.png) no-repeat;
 	background-position: -70px 0px;
 	color: white;
-	box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz -box-sizing: border-box;
+        -o-box-sizing: border-box;
+         box-sizing: border-box;
 	padding-left: 33px;
 }
 .about_box_text--icon_blog {
@@ -307,7 +330,7 @@ main {
 	text-transform: uppercase;
 }
 .about_box_read a:hover {
-	text-shadow: 0px 0px 25px #FFFFFF;
+	text-shadow: 0px 0px 25px #fff;
 }
 
 
@@ -315,11 +338,13 @@ main {
 	margin-top: 84px;
 	margin-right: 59px;
 }
+
 .title_box1 {
 	margin-left: 19px;
 	font-size: 29px;
 	line-height: 12px;
 }
+
 .text_box1 {
 	font-size: 16px;
 	line-height: 19px;
@@ -327,6 +352,7 @@ main {
 	margin-top: 21px;
 	font-family: 'Open Sans', sans-serif;
 }
+
 .about_box_read--box1 {
 	font-size: 18px;
 	margin-top: 20px;
@@ -391,6 +417,9 @@ main {
 .blog_box_message {
 	float: left;
 	position: relative;
+        -webkit-box-sizing: border-box;
+        -moz -box-sizing: border-box;
+        -o-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 428px;
 	height: 273px;
@@ -418,24 +447,29 @@ main {
 	text-transform: uppercase;
 	color: #edbfff;
 }
+
 .blog_box_message_text {
 	font-size: 17px;
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 11px;
 }
+
 .nav_menu--modify {	
 	display: block;
 	clear: both;
 	margin-left: 22px;
 	width: 428px;
 }
+
 .nav_menu_switchover--modify li {
 	background-color: #fff;
 	border: 1px solid #e8e8e8;
 }
+
 .nav_menu_switchover--modify li:nth-child(2) a {
 	background-color: #555555;
 }
+
 .nav_menu_switchover--modify li a:hover {
 	background-color: #555555;
 }
@@ -469,19 +503,23 @@ main {
 	font-size: 17px;
 
 }
+
 .blog_box_comment_text1 {
 	font-size: 15px;
 	margin-top: 5px;
 }
+
 .blog_box_comment_title2 {
 	font-size: 17px;
 	font-weight: bold;
 	margin-top: 24px;
 }
+
 .blog_box_comment_text2 {
 	font-size: 15px;
 	margin-top: 4px;
 }
+
 .blog_box_comment_title3 {
 	font-size: 17px;
 	font-weight: bold;
@@ -568,7 +606,7 @@ main {
 	margin-top: 8px;
 	font-size: 17px;
 	line-height: 24px;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .copyright_box_column3 {
 	margin-top: 94px;
@@ -582,7 +620,7 @@ main {
 .copyright_box_column3_text3 {
 	font-size: 17px;
 	line-height: 24px;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin-top: 6px;
 	padding-left: 3px;
 }
@@ -591,23 +629,28 @@ main {
 /*FOOTER*/
 footer {
 	background: url(../img/footer.png) no-repeat;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footer.png', sizingMethod='scale');
+        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/footer.png', sizingMethod='scale')";
 	background-position: center center;
 	background-size: cover;
 	height: 114px;
 	-webkit-box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
-}
+} 
+
 .foot {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .head_nav--footer {
 	padding: 0px;
 	margin: 0px;
 	display: inline-block;
 }
+
 .head_nav_menu--footer {
 	width: inherit;
 	font-size: 21px;
@@ -1377,9 +1420,11 @@ footer {
 margin-left: -1000px;
 }
 
+
 .right_icon {
 margin-right: -1000px;
 }
+
 
 }
     
