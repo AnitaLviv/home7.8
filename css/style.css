@@ -3,6 +3,10 @@
         src: url(../fonts/league-gothic.regular.ttf);
 }
 
+body {
+overflow-x:hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;
